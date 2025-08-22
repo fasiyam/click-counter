@@ -22,6 +22,15 @@ document.getElementById('comment-btn')
 })
 
 
+document.getElementById("share-btn")
+.addEventListener("click", function(){
+    const shares = document.getElementById("share-counter").innerText;
 
+    let shareCount = parseInt(shares);
+
+    shareCount++;
+
+    document.getElementById("share-counter").innerText = shareCount;
+})
 
 
