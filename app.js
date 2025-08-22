@@ -10,5 +10,18 @@ document.getElementById("like-btn")
 })
 
 
+document.getElementById('comment-btn')
+.addEventListener("click", function(){
+
+    const comments = document.getElementById("comment-counter").innerText;
+
+    let commentCount = parseInt(comments);
+    commentCount++;
+
+    document.getElementById("comment-counter").innerText = commentCount;
+})
+
+
+
 
 
